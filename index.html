@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Faith Styles</title>
+
+  <script src="js\skel\skel.js"></script>
+  <script src="js\skel\skel-layout.js"></script>
+  <script src="js\skel\skel-init.js"></script>
+
+  <script src="js\lib\dropdown.js"></script>
+
+  <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="css/faithStyles.css">
+  <link rel="stylesheet" href="css/dropdown.css">
+  <link rel="stylesheet" href="css/gravitons.css">
+  <link rel="stylesheet" href="css/balloon.css">
+
+</head>
+<body>
+  <header>
+    <div class="navigation-logo not-small"></div>
+    <div class="application-title">Faith Styles</div>
+  </header>
+
+  <div class="center-constrained-small h4">
+    <div class="h1 center">Text Sizes</div>
+    <hr>
+    <div class="mt2 mb4 center">
+        <div class="h1">.h1 This is text</div>
+        <div class="h2">.h2 This is text</div>
+        <div class="h3">.h3 This is text</div>
+        <div class="h4">.h4 This is text</div>
+        <div class="h5">.h5 This is text</div>
+    </div>
+
+
+    <div class="h1 center">Form Elements</div>
+    <hr>
+    <div class="mt2 mb4">
+      <div class="row mb2">
+        <div class="6u tar">Text</div>
+        <div class="6u tal"><input type="text" class="text" /></div>
+      </div>
+      <div class="row mb2">
+        <div class="6u tar">Text Validation Error:</div>
+        <div class="6u tal"><input type="text" class="text validation-error"/></div>
+      </div>
+      <div class="row mb2">
+        <div class="6u tar">Textarea</div>
+        <div class="6u tal"><textarea class="text"></textarea></div>
+      </div>
+      <div class="row mb2">
+        <div class="6u tar">Dropdown</div>
+        <div class="6u tal"><div id="dropdown"></div></div>
+      </div>
+    </div>
+
+    <div class="h1 center">Buttons/Links</div>
+    <hr>
+    <div class="mt2 mb4">
+      <div class="row mb2">
+        <div class="6u tar">Button</div>
+        <div class="6u tal"><input type="button" class="button" value="Button"></div>
+      </div>
+      <div class="row mb2">
+        <div class="6u tar">Toggled Button</div>
+        <div class="6u tal"><input type="button" class="button button-toggled" value="Button"></div>
+      </div>
+      <div class="row mb2">
+        <div class="6u tar">Disabled Button</div>
+        <div class="6u tal"><input type="button" class="button" value="Button" disabled></div>
+      </div>
+      <div class="row mb2">
+        <div class="6u tar">Validation Error Button</div>
+        <div class="6u tal"><input type="button" class="button validation-error" value="Button"></div>
+      </div>
+      <div class="row mb2">
+        <div class="6u tar">Small Button</div>
+        <div class="6u tal"><input type="button" class="button button-small" value="Button"></div>
+      </div>
+      <div class="row mb2">
+        <div class="6u tar">Link</div>
+        <div class="6u tal"><a href="/">Click Me</a></div>
+      </div>
+
+      <div class="h1 center">Tooltip</div>
+      <hr>
+      <div class="mt2 mb4 center">
+        <button class="button" data-balloon="Whats up?">Hover Me!</button>
+      </div>
+
+    <div class="h1 center">Tables</div>
+    <hr>
+    <div class="mt2 mb4">
+      <div class="group-table-header not-small">
+       <div class="row">
+           <div class="4u">Column One</div>
+           <div class="4u">Column Two</div>
+           <div class="4u">Column Three</div>
+       </div>
+     </div>
+     <div class="group-box">
+           <div class="group-box-header">
+               <div class="row">
+                   <div class="4u 12u(small)">
+                       <p>Item</p>
+                   </div>
+                   <div class="4u not-small">
+                      <p>Item</p>
+                   </div>
+                   <div class="4u not-small">
+                      <p>Item</p>
+                   </div>
+               </div>
+           </div>
+           <div class="group-box-body only-small">
+              <p>Item</p>
+              <p>Item</p>
+              <p>Item</p>
+           </div>
+
+       </div>
+       <div class="group-box">
+             <div class="group-box-header">
+                 <div class="row">
+                     <div class="4u 12u(small)">
+                         <p>Item</p>
+                     </div>
+                     <div class="4u not-small">
+                        <p>Item</p>
+                     </div>
+                     <div class="4u not-small">
+                        <p>Item</p>
+                     </div>
+                 </div>
+             </div>
+             <div class="group-box-body only-small">
+                <p>Item</p>
+                <p>Item</p>
+                <p>Item</p>
+             </div>
+
+         </div>
+    </div>
+
+
+  </div>
+
+
+
+
+
+  <script src="js/app.js"></script>
+  <script>run()</script>
+</body>
+</html>
