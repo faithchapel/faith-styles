@@ -6,16 +6,18 @@ Simply view index.html for examples of each element
 
 # Development Usage
 
-The only gulp task is a minifier.
-
-To install run:
+First run:
 ```
 npm inistall
 ```
 
-Then run
+### Tasks
+Minifies css and puts it in dist folder
 ```
 gulp
 ```
 
-This will minify all css and put it in the dist folder
+Lints css
+```
+gulp lint
+```
