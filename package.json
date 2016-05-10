@@ -20,11 +20,11 @@
     "gulp": "^3.9.1",
     "gulp-csslint": "^0.3.0",
     "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.3.1",
     "gulp-uglify": "^1.5.3",
     "gulp-uglifycss": "^1.0.6"
   },
   "dependencies": {
-    "balloon-css": "^0.2.4",
-    "gravitons": "^1.0.0"
+    "balloon-css": "^0.2.4"
   }
 }

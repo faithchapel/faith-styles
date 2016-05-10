@@ -1,0 +1,106 @@
+
+/*! gravitons */
+
+/*
+  v1.0.0
+  http://jxnblk.com/gravitons
+
+*/
+
+$s1: .5rem;
+$s2: 1rem;
+$s3: 2rem;
+$s4: 4rem;
+
+$h1: 3rem;
+$h2: 1.9rem;
+$h3: 1.35rem;
+$h4: 1rem;
+$h5: .875rem;
+$h6: .75rem;
+
+.h1 { font-size: $h1 }
+.h2 { font-size: $h2 }
+.h3 { font-size: $h3 }
+.h4 { font-size: $h4 }
+.h5 { font-size: $h5 }
+.h6 { font-size: $h6 }
+
+.m0  { margin: 0 }
+.mt0 { margin-top: 0 }
+.mr0 { margin-right: 0 }
+.mb0 { margin-bottom: 0 }
+.ml0 { margin-left: 0 }
+
+.m1  { margin: $s1 }
+.mt1 { margin-top: $s1 }
+.mr1 { margin-right: $s1 }
+.mb1 { margin-bottom: $s1 }
+.ml1 { margin-left: $s1 }
+
+.m2  { margin: $s2 }
+.mt2 { margin-top: $s2 }
+.mr2 { margin-right: $s2 }
+.mb2 { margin-bottom: $s2 }
+.ml2 { margin-left: $s2 }
+
+.m3  { margin: $s3 }
+.mt3 { margin-top: $s3 }
+.mr3 { margin-right: $s3 }
+.mb3 { margin-bottom: $s3 }
+.ml3 { margin-left: $s3 }
+
+.m4  { margin: $s4 }
+.mt4 { margin-top: $s4 }
+.mr4 { margin-right: $s4 }
+.mb4 { margin-bottom: $s4 }
+.ml4 { margin-left: $s4 }
+
+.p0  { padding: 0 }
+.pt0 { padding-top: 0 }
+.pr0 { padding-right: 0 }
+.pb0 { padding-bottom: 0 }
+.pl0 { padding-left: 0 }
+
+.p1  { padding: $s1 }
+.pt1 { padding-top: $s1 }
+.pr1 { padding-right: $s1 }
+.pb1 { padding-bottom: $s1 }
+.pl1 { padding-left: $s1 }
+.px1 { padding-left: $s1; padding-right: $s1 }
+.py1 { padding-top: $s1; padding-bottom: $s1 }
+
+.p2  { padding: $s2 }
+.pt2 { padding-top: $s2 }
+.pr2 { padding-right: $s2 }
+.pb2 { padding-bottom: $s2 }
+.pl2 { padding-left: $s2 }
+.px2 { padding-left: $s2; padding-right: $s2 }
+.py2 { padding-top: $s2; padding-bottom: $s2 }
+
+.p3  { padding: $s3 }
+.pt3 { padding-top: $s3 }
+.pr3 { padding-right: $s3 }
+.pb3 { padding-bottom: $s3 }
+.pl3 { padding-left: $s3 }
+.px3 { padding-left: $s3; padding-right: $s3 }
+.py3 { padding-top: $s3; padding-bottom: $s3 }
+
+.p4  { padding: $s4 }
+.pt4 { padding-top: $s4 }
+.pr4 { padding-right: $s4 }
+.pb4 { padding-bottom: $s4 }
+.pl4 { padding-left: $s4 }
+.px4 { padding-left: $s4; padding-right: $s4 }
+.py4 { padding-top: $s4; padding-bottom: $s4 }
+.db  { display: block }
+.dib { display: inline-block }
+.di  { display: inline }
+.dt  { display: table }
+.dtc { display: table-cell }
+.fl { float: left }
+.fr { float: right }
+.oh { overflow: hidden }
+
+.al { text-align: left }
+.ar { text-align: right }
