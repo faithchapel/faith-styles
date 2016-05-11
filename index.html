@@ -4,17 +4,50 @@
   <meta charset="UTF-8">
   <title>Faith Styles</title>
 
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+
   <script src="js\skel\skel.js"></script>
   <script src="js\skel\skel-layout.js"></script>
   <script src="js\skel\skel-init.js"></script>
 
   <script src="js\lib\dropdown.js"></script>
 
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
   <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300' rel='stylesheet' type='text/css'>
+
   <link rel="stylesheet" href="dist/faith-styles.css">
   <link rel="stylesheet" href="css/dropdown.css">
   <link rel="stylesheet" href="dist/fc-gravitons.css">
   <link rel="stylesheet" href="node_modules/balloon-css/balloon.css">
+
+  <style>
+    [data-desc] {
+      cursor: pointer;
+    }
+    .sidebar {
+      width: 30%;
+      height: 100%;
+      position: fixed;
+      right: 0;
+      top:0;
+      background-color: black;
+      z-index: 9999;
+      display:none;
+      padding: 1rem 2rem;
+
+      color: white;
+    }
+    .sidebar .title {
+      text-align:center;
+    }
+    .close-sidebar {
+      text-align:right;
+      font-size: 1.7rem;
+      cursor: pointer;
+    }
+  </style>
 
 </head>
 <body>
@@ -23,22 +56,28 @@
     <div class="application-title">Faith Styles</div>
   </header>
 
+  <div class="sidebar">
+    <div class="close-sidebar"><i class="fa fa-times"></i></div>
+    <div class="title h1"></div>
+    <div class="description mt2"></div>
+  </div>
+
   <div class="center-constrained-small h4">
     <div class="h1 center">Text Sizes</div>
     <hr>
     <div class="mt2 mb4 center">
-        <div class="h1">.h1 This is text</div>
-        <div class="h2">.h2 This is text</div>
-        <div class="h3">.h3 This is text</div>
-        <div class="h4">.h4 This is text</div>
-        <div class="h5">.h5 This is text</div>
-        <div class="mt2">Normal text</div>
+        <div class="h1" data-desc="h1">.h1 This is text</div>
+        <div class="h2" data-desc="h2">.h2 This is text</div>
+        <div class="h3" data-desc="h3">.h3 This is text</div>
+        <div class="h4" data-desc="h4">.h4 This is text</div>
+        <div class="h5" data-desc="h5">.h5 This is text</div>
+        <div class="mt2" data-desc="Normal Text">Normal text</div>
     </div>
 
     <div class="h1 center">Paragraph</div>
     <hr>
     <div class="mt2 mb4 al">
-      <p>
+      <p data-desc="p">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
       </p>
     </div>
@@ -48,20 +87,20 @@
     <hr>
     <div class="mt2 mb4">
       <div class="row mb2">
-        <div class="6u tar">Text</div>
-        <div class="6u tal"><input type="text" class="text" /></div>
+        <div class="6u ar" data-desc="text">Text</div>
+        <div class="6u al"><input type="text" class="text" /></div>
       </div>
       <div class="row mb2">
-        <div class="6u tar">Text Validation Error:</div>
-        <div class="6u tal"><input type="text" class="text validation-error"/></div>
+        <div class="6u ar" data-desc="validation-error">Text Validation Error:</div>
+        <div class="6u al"><input type="text" class="text validation-error"/></div>
       </div>
       <div class="row mb2">
-        <div class="6u tar">Textarea</div>
-        <div class="6u tal"><textarea class="text"></textarea></div>
+        <div class="6u ar" data-desc="text">Textarea</div>
+        <div class="6u al"><textarea class="text"></textarea></div>
       </div>
       <div class="row mb2">
-        <div class="6u tar">Dropdown</div>
-        <div class="6u tal"><div id="dropdown"></div></div>
+        <div class="6u ar">Dropdown</div>
+        <div class="6u al"><div id="dropdown"></div></div>
       </div>
     </div>
 
@@ -69,48 +108,48 @@
     <hr>
     <div class="mt2 mb4">
       <div class="row mb2">
-        <div class="6u tar">Button</div>
-        <div class="6u tal"><input type="button" class="button" value="Button"></div>
+        <div class="6u ar" data-desc="button">Button</div>
+        <div class="6u al"><input type="button" class="button" value="Button"></div>
       </div>
       <div class="row mb2">
-        <div class="6u tar">Toggled Button</div>
-        <div class="6u tal"><input type="button" class="button button-toggled" value="Button"></div>
+        <div class="6u ar" data-desc="button-toggled">Toggled Button</div>
+        <div class="6u al"><input type="button" class="button button-toggled" value="Button"></div>
       </div>
       <div class="row mb2">
-        <div class="6u tar">Disabled Button</div>
-        <div class="6u tal"><input type="button" class="button" value="Button" disabled></div>
+        <div class="6u ar" data-desc="button[disabled]">Disabled Button</div>
+        <div class="6u al"><input type="button" class="button" value="Button" disabled></div>
       </div>
       <div class="row mb2">
-        <div class="6u tar">Validation Error Button</div>
-        <div class="6u tal"><input type="button" class="button validation-error" value="Button"></div>
+        <div class="6u ar" data-desc="validation-error">Validation Error Button</div>
+        <div class="6u al"><input type="button" class="button validation-error" value="Button"></div>
       </div>
       <div class="row mb2">
-        <div class="6u tar">Small Button</div>
-        <div class="6u tal"><input type="button" class="button button-small" value="Button"></div>
+        <div class="6u ar" data-desc="button-small">Small Button</div>
+        <div class="6u al"><input type="button" class="button button-small" value="Button"></div>
       </div>
       <div class="row mb2">
-        <div class="6u tar">Link</div>
-        <div class="6u tal"><a href="/">Click Me</a></div>
+        <div class="6u ar" data-desc="a">Link</div>
+        <div class="6u al"><a href="/">Click Me</a></div>
       </div>
 
       <div class="h1 center">Tooltip</div>
       <hr>
       <div class="mt2 mb4 center">
-        <button class="button" data-balloon="Whats up?">Hover Me!</button>
+        <button class="button" data-balloon="Whats up?" data-desc="data-balloon">Hover Me!</button>
       </div>
   </div>
 
     <div class="h1 center">Tables</div>
     <hr>
     <div class="mt2 mb4">
-      <div class="group-table-header not-small">
+      <div class="group-table-header not-small" data-desc="group-table-header">
        <div class="row">
            <div class="4u">Column One</div>
            <div class="4u">Column Two</div>
            <div class="4u">Column Three</div>
        </div>
      </div>
-     <div class="group-box">
+     <div class="group-box" data-desc="group-box">
            <div class="group-box-header">
                <div class="row">
                    <div class="4u 12u(small)">
@@ -159,14 +198,14 @@
     <hr class="center-constrained-small">
     <div class="mt2 mb4 center">
       <div class="center h2 mt2">center-constrained-mid</div>
-      <div class="center-constrained-mid">
+      <div class="center-constrained-mid" data-desc="center-constrained-mid">
         <p class="al">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
         </p>
       </div>
 
       <div class="center h2 mt3">center-constrained-small</div>
-      <div class="center-constrained-small">
+      <div class="center-constrained-small" data-desc="center-constrained-small">
         <p class="al">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
         </p>
