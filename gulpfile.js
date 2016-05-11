@@ -8,6 +8,17 @@ var sass = require('gulp-sass');
 gulp.task('css', function() {
     gulp.src('css/faith-styles.css')
         .pipe(gulp.dest('dist'));
+
+    gulp.src('css/fc-gravitons.scss')
+        .pipe(sass())
+        .pipe(uglifycss())
+        .pipe(gulp.dest('dist'));
+
+    gulp.src('css/dropdown.css')
+        .pipe(gulp.dest('dist'));
+
+    gulp.src('css/balloon.css')
+      .pipe(gulp.dest('dist'));
 });
 
 gulp.task('lint', function(){
@@ -16,15 +27,8 @@ gulp.task('lint', function(){
     .pipe(csslint.reporter());
 });
 
-gulp.task('sass', function(){
-  gulp.src('css/fc-gravitons.scss')
-    .pipe(sass())
-    .pipe(uglifycss())
-    .pipe(gulp.dest('dist'));
-});
-
 gulp.task('watch', function () {
-  gulp.watch('css/fc-gravitons.scss', ['sass']);
+  gulp.watch('css/fc-gravitons.scss', ['css']);
   gulp.watch('css/faith-styles.css', ['css']);
 });
 
