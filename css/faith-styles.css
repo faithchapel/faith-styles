@@ -46,10 +46,7 @@ hr {
     background-color: rgb(233, 233, 233);
 }
 
-p {
-  line-height: 1.8rem;
-  letter-spacing: 0.015rem;
-}
+
 
 header {
     width:100%;
@@ -118,9 +115,15 @@ header {
   text-transform: uppercase;
 }
 
+.p { /* the <p> tag doesn't allow <p> <div></div> </p> so it is a class */
+  line-height: 1.8rem;
+  letter-spacing: 0.015rem;
+  display: inline-block;
+}
+
 /* Objects */
 
-.button, .button-small {
+.button {
 	-webkit-border-radius: 0;
 	-moz-border-radius: 0;
 	border-radius: 0;
