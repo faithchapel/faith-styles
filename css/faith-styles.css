@@ -108,12 +108,15 @@ header {
 		    }
 		}
 
-    .bold {
-      font-weight: 700;
-    }
-    .upper {
-      text-transform: uppercase;
-    }
+.bold {
+  font-weight: 700;
+}
+  .bold-small{
+    font-weight: 400;
+  }
+.upper {
+  text-transform: uppercase;
+}
 
 /* Objects */
 
