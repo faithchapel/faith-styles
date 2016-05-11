@@ -9,7 +9,7 @@ gulp.task('css', function() {
     gulp.src('css/faith-styles.css')
         .pipe(gulp.dest('dist'));
 
-    gulp.src('css/fc-gravitons.scss')
+    gulp.src('css/faith-gravitons.scss')
         .pipe(sass())
         .pipe(uglifycss())
         .pipe(gulp.dest('dist'));
@@ -28,7 +28,7 @@ gulp.task('lint', function(){
 });
 
 gulp.task('watch', function () {
-  gulp.watch('css/fc-gravitons.scss', ['css']);
+  gulp.watch('css/faith-gravitons.scss', ['css']);
   gulp.watch('css/faith-styles.css', ['css']);
 });
 
