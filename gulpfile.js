@@ -34,8 +34,8 @@ gulp.task('lint', function(){
 });
 
 gulp.task('watch', function () {
-  gulp.watch('css/faith-gravitons.scss', ['css']);
-  gulp.watch('css/faith-styles.css', ['css']);
+  gulp.watch('css/*.scss', ['css']);
+  gulp.watch('css/*.css', ['css']);
 });
 
 gulp.task('default', ['css']);
