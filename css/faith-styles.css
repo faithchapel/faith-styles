@@ -266,6 +266,13 @@ header {
 
 }
 
+.header {
+    width:100%;
+    background-color: #FFF;
+    border-bottom: solid 1px #e5e5e8;
+    padding: .7rem 0;
+    height: 3rem;
+}
 
 .navigation-logo{
 	background-image:url(https://cdn.faithchapel.cc/images/shared/faith-chapel-logo-small.png);
