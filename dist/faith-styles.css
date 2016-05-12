@@ -347,3 +347,27 @@ header {
     overflow:hidden;
     white-space:nowrap;
 }
+
+
+.checkbox {
+    width: 1.1rem;
+    height: 1.1rem;
+    display: inline-block;
+    cursor: pointer;
+
+    background-color: #e5e5e8;
+
+    user-select: none;
+}
+
+.checkbox-inside{
+    position:relative;
+
+    width: calc(100% - .6rem);
+    height: calc(100% - .6rem);
+
+    top: .3rem;
+    left: .3rem;
+
+    background-color: #68ae53;
+}
