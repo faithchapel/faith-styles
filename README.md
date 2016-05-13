@@ -26,6 +26,11 @@ Minifies css and puts it in dist folder
 gulp
 ```
 
+Watches scss and css files for changes and runs the default task when changes occurr
+````
+gulp watch
+````
+
 Lints css
 ```
 gulp lint
