@@ -166,7 +166,6 @@ header {
 
   .button.validation-error{
     color: #FF8888;
-    cursor: not-allowed;
   }
       .button.validation-error:hover {
         color: #FF8888;
@@ -194,6 +193,11 @@ header {
 .validation-error {
     background-color: #F2DEDE !important;
     border: solid 2px #FF8888;
+}
+
+.validation-success {
+  background-color: #DFF0D8 !important;
+  border: solid 2px #85c66a;
 }
 
 
