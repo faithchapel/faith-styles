@@ -21,7 +21,8 @@ gulp.task('css', function() {
         .pipe(uglifycss())
         .pipe(gulp.dest('dist'));
 
-    gulp.src('dist/*.css')
+    gulp.src(['css/faith-styles.css', 'css/faith-gravitons.scss', 'css/dropdown.css', 'css/balloon.css'])
+      .pipe(sass())
       .pipe(concat('faith-master.css'))
       .pipe(uglifycss())
       .pipe(gulp.dest('dist'));
