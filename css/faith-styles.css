@@ -114,7 +114,7 @@ hr {
 .button {
 	-webkit-border-radius: 0;
 	-moz-border-radius: 0;
-	border-radius: 0;
+	border-radius: .5rem;
   width: initial;
 	color: #68ae53;
 	font-weight: 400;
