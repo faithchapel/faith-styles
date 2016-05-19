@@ -139,8 +139,14 @@ hr {
     -webkit-transition: background .25s ease-in-out;
 	}
 
+  .button.button-white:hover{
+    background: #FFF;
+    color: #C7796F;
+    border: solid #FFF 2px
+  }
+
 	.button:active {
-		bckground: #ffb658;
+		background: #ffb658;
 	}
 
 	.button:focus {
@@ -330,6 +336,7 @@ hr {
 
 .sandwitch-button {
   font-size: 1.5rem;
+
 }
 
 @media (max-width: 980px) {
