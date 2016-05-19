@@ -12,7 +12,7 @@
     padding-right: 13px;
     padding-left: 13px;
 
-    color: #61b016;
+    color: #de761c;
     background-color: #e5e5e8;
     background-image: url("../images/form-arrow.png");
     background-position: right center;
@@ -36,7 +36,7 @@
         z-index: 5;
         border-top: 1px solid #ccc;
         width: 100%;
-        color: #61b016;
+        color: #de761c;
         background-color: #e5e5e8;
         display: none;
     }
@@ -58,11 +58,11 @@
         }
 
     .dropdown.open {
-        color: #61b016;
+        color: #de761c;
     }
 
         .dropdown.open ul {
-            color: #61b016;
+            color: #de761c;
         }
 
 .dropdown-header {
