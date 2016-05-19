@@ -28,11 +28,11 @@ html {
 }
 
 a {
-    color: #de761c;
+    color: #f08800;
     text-decoration: none;
 }
 	a:hover{
-	    color: #f0b989;
+	    color: #ffb658;
 	}
 
 hr {
@@ -119,11 +119,11 @@ hr {
 	-moz-border-radius: 0;
 	border-radius: .5rem;
   width: initial;
-	color: #de761c;
+	color: #f08800;
 	font-weight: 400;
 	padding:.2rem .5rem;
   margin: .2rem 0;
-	border: solid #de761c 2px;
+	border: solid #f08800 2px;
   cursor:pointer;
 
 	background: none;
@@ -132,7 +132,7 @@ hr {
     -webkit-transition: background .25s ease-in-out;
 }
 	.button:hover:not([disabled]), .button-toggled {
-		background: #de761c;
+		background: #f08800;
 		color: #fff;
     transition: background .25s ease-in-out;
     -moz-transition: background .25s ease-in-out;
@@ -140,7 +140,7 @@ hr {
 	}
 
 	.button:active {
-		bckground: #f0b989;
+		bckground: #ffb658;
 	}
 
 	.button:focus {
@@ -315,7 +315,7 @@ hr {
 }
 
 .navigation-menu li a:hover {
-  color: #de761c;
+  color: #f08800;
 }
 
 .navigation-mobile-menu {
@@ -324,7 +324,7 @@ hr {
 }
 
 .navigation-mobile-menu li:hover{
-  background: #de761c;
+  background: #f08800;
   color: #FFF;
 }
 
@@ -433,5 +433,5 @@ hr {
     top: .3rem;
     left: .3rem;
 
-    background-color: #de761c;
+    background-color: #f08800;
 }
