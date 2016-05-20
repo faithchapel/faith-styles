@@ -93,11 +93,14 @@ $h6: .75rem;
 .pl4 { padding-left: $s4 }
 .px4 { padding-left: $s4; padding-right: $s4 }
 .py4 { padding-top: $s4; padding-bottom: $s4 }
+
 .db  { display: block }
 .dib { display: inline-block }
 .di  { display: inline }
 .dt  { display: table }
 .dtc { display: table-cell }
+.df { display: flex; }
+
 .fl { float: left }
 .fr { float: right }
 .oh { overflow: hidden }
