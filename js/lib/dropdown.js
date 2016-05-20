@@ -47,7 +47,8 @@
         }
     }
 
-    Dropdown.prototype.open = function () {
+    Dropdown.prototype.open = function (e) {
+      e.stopImmediatePropagation()
         this.options.wrapper.classList.add("open");
         this.optionContainer.style.display = "block";
         this.isOpen = true;
@@ -82,14 +83,6 @@
         var clickedElement = e.currentTarget;
         selectOption.call(this, clickedElement);
         this.close.call(this);
-    }
-
-    function wrapperClicked() {
-        if (this.isOpen) {
-            this.close.call(this);
-        } else {
-            this.open.call(this);
-        }
     }
 
     function selectOption(optionElement) {
@@ -141,8 +134,18 @@
     }
 
     function initializeEvents() {
-        window.addEventListener('click', this.close());
-        this.wrapper.addEventListener('click', wrapperClicked.bind(this));
+        var dDown = this;
+        this.wrapper.addEventListener('click', function(e){
+          if (dDown.isOpen){
+            dDown.close(e);
+          } else {
+            dDown.open(e)
+          }
+        });
+
+        window.addEventListener('click', function(){
+          dDown.close();
+        });
         // option event listeners are added when they are created
     }
 
