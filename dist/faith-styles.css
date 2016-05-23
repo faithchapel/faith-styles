@@ -310,7 +310,41 @@ hr {
   -webkit-margin-after: 0;
   -webkit-padding-start: 0;
 }
+
+.navigation-sub-menu{
+  display:none;
+  position:absolute;
+  padding-left:0;
+  left:0px;
+  top:100%;
+  background: #e5e5e8;
+  width: 190%;
+}
+
+.navigation-menu .navigation-sub-menu li {
+  display: block;
+  padding: .4rem .7rem;
+}
+
+.navigation-menu .navigation-sub-menu a:hover li {
+  color: #FFF;
+}
+
+.navigation-menu .navigation-sub-menu li:hover {
+  background: #f08800;
+}
+
+.sub-menu-header-element:hover{
+    background: #e5e5e8;
+}
+
+
+.navigation-menu li:hover .navigation-sub-menu{
+  display: block;
+}
+
 .navigation-menu li {
+  position:relative;
   display: inline-block;
   padding: .7rem;
   white-space: nowrap;
