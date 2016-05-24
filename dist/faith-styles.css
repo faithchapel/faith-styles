@@ -370,12 +370,16 @@ hr {
 
 .sandwitch-button {
   font-size: 1.5rem;
-
+  display: none;
 }
 
 @media (max-width: 980px) {
   .navigation-menu{
     display: none;
+  }
+
+  .sandwitch-button{
+    display: initial;
   }
 
   .main-content{
@@ -451,6 +455,9 @@ hr {
     text-overflow: ellipsis;
     overflow:hidden;
     white-space:nowrap;
+    width:100%;
+    display:inline-block;
+    text-align: left;
 }
 
 
