@@ -363,10 +363,14 @@ hr {
   text-align:center;
 }
 
+.navigation-mobile-menu li {
+  padding: .3rem 0;
+}
 .navigation-mobile-menu li:hover{
   background: #f08800;
   color: #FFF;
 }
+
 
 .sandwitch-button {
   font-size: 1.5rem;
