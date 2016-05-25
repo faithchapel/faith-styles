@@ -206,8 +206,8 @@ hr {
 
 
 .footer{
-    background:#414143;
-    height: 14rem;
+    background:#59595b;
+    height: 10rem;
     margin-top: 4rem;
 }
 
@@ -232,12 +232,14 @@ hr {
   text-align: right;
 }
 
+.footer-text-small {
+  font-size: .7rem;
+}
+
 @media(max-width:980px){
     .footer{
-        background:#414143;
-        height: 32rem;
-        margin-top: 4rem;
-        padding:0 2rem;
+        height: 14rem;
+        padding:0 1rem;
     }
 
     .footer-underline{
@@ -256,8 +258,19 @@ hr {
         text-align:center;
 	}
 
-  .footer-item, .footer-item:last-child, .footer-item:first-child {
+  .footer-item:first-child{
     text-align: left;
+  }
+
+  .footer-item {
+    text-align:right;
+  }
+
+  .footer-item:last-child{
+    text-align:center;
+  }
+
+  .footer-item {
     margin-bottom: 1.5rem;
   }
 
