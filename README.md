@@ -1,2 +1,2 @@
 # Faith Styles
-This project has been depricated
+This project has been deprecated
